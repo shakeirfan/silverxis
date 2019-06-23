@@ -1,0 +1,50 @@
+<div class="table-responsive">
+<table class="table table-striped" style="text-align:right" >
+    <thead>Add New List<button type="submit" (click)="addNewItem()">+</button></thead>
+
+    <tr>
+        <td>
+            item
+        </td>
+        <td>
+                item description
+            </td> 
+            <td>
+                    Quantity
+                </td> 
+                <td>
+                        item
+                    </td>
+                    <td>
+                           
+                        </td>
+    </tr>
+    <tr *ngFor="let item of ListItem;let i=index">
+        <td>
+            <select>
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+                <option>option4</option>
+            </select>
+        </td>
+        <td>
+                <input type="text">
+            </td>
+            <td>
+                    <select>
+                        <option>option1</option>
+                        <option>option2</option>
+                        <option>option3</option>
+                        <option>option4</option>
+                    </select>
+                </td>
+                <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+    </tr>
+</table>
+</div>
